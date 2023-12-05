@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>给小王一封情书💌</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: MyFont;
+            src: url('fonts/NiHeWoDeLangManYuZhou-2.ttf') format('truetype')
+        }
+
+        #main {
+            font-size: 22px;
+            color: #000;
+            padding: 10px;
+            font-family: MyFont;
+            white-space: pre-line;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        body {
+            background: #f4f4f4;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main"></div>
+
+    <script type="text/javascript" class="autoinsert" src="js/jquery-1.2.6.min.js"></script>
+    <script src="js/snowfall.jquery.js"></script>
+    <script>
+        $(document).snowfall('clear');
+        $(document).snowfall({
+            image: "images/huaban.png",
+            flakeCount: 30,
+            minSize: 5,
+            maxSize: 22
+        });
+    </script>
+
+    <script>
+        let txt = `
+      亲爱的宝贝：\n
+初见你时，我感受到了一股清新脱俗的气息，只是惊鸿一瞥，胜却人间无数。\n
+第二次见面是在电影院，我们进行了面对面的交流，对彼此有了一个初步了解。那晚，我们一起吃完火锅后，在广场上停留了很长时间，在寒风中，我第一次听到了一个女孩内心深处最真实的声音，让我产生了深深的共鸣。\n
+第三次见面，我们约在了你朋友的婚礼，当婚礼进行曲响起的那一刻，坐在台下的我，望着站在台上的你，恍惚之间，我的内心多了一份期许和憧憬。当晚的道别，我们进行了一次深入而坦诚的交谈。虽然日后会分隔两地，但是我始终相信，只要我们坚定不移，最终一定能够走到一起。\n
+接下来的每一天我们都保持着联系，浪漫的情人节那天，在那份特殊“奖励”的加持下，我们正式确立了恋爱关系。那晚我在屏幕这头翻来覆去，久久未能入眠。我深知这份感情的重要性，爱情的种子一旦种下，就意味着一份承诺。我下定决心，一定会好好地守护你。\n
+每月一次的相聚，是我们之间的约定，也是我们感情的纽带。如今回想起来，幸福的场景依旧历历在目。记得确定关系后的第一次约会，我俩漫步在三月略带一丝凉意的八里湖畔，走了一圈又一圈，内心紧张又局促，牵起你手的那一刹那我紧张极了，这是我第一次离心爱的女生那么近，那一刻，我想将这份美好永远的延续下去。这一年我们一起走过了许多大大小小的城市，留下了我们恋爱的足迹。在庐山我们在山谷中踱步，惊叹大自然的鬼斧神工；在婺源篁岭我们在梯田间穿行，沉浸在灿烂的花海；在庐山西海我们置身于山水，在岛屿间畅快遨游；在景德镇我们一起走进艺术的殿堂，领略陶瓷文化的博大精深；在武汉我们登上黄鹤楼远眺武汉长江大桥，感受“一桥飞架南北，天堑变通途”的波澜壮阔。每一次的久别重逢都是最美好的相遇，时光很美，只因有你相伴。\n
+从早春，到盛夏，再到深秋，时间来到了这个冬日。让我们保持初心，奔赴下一场山海。\n
+      <div class="text-right">爱你的嘟嘟</div><div class="text-right">2023年冬 写于上海</div>`;
+
+        document.getElementById('main').innerHTML = txt
+
+    </script>
+</body>
+
+</html>
