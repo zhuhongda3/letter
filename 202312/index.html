@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>写给小王的一封情书💌</title>
+    <title>写给宝贝的情书</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <style>
         * {
@@ -40,7 +40,7 @@
 
 <body>
     <div id="main">
-        <div style="font-family: 'Courier New', Courier, monospace;line-height: 32px;text-align: center;margin-top: 100px;">你有一封书💌待查收，<button style="border-radius: 16px;height: 32px;padding: 0 20px;border: 0;background: #000;color: #fff;font-size: 14px;cursor: pointer;" onclick="handleGet()">点击领取</button></div>
+        <div style="font-family: 'Courier New', Courier, monospace;text-align: center;margin-top: 100px;"><span style="line-height: 32px;vertical-align: middle;">您有一封情书💌待查收，</span><button style="border-radius: 16px;height: 32px;padding: 0 20px;border: 2px solid #000;font-size: 14px;cursor: pointer;font-weight: 500;" onclick="handleGet()">点击领取</button></div>
     </div>
 
     <script type="text/javascript" class="autoinsert" src="js/jquery-1.2.6.min.js"></script>
@@ -48,7 +48,7 @@
     <script src="js/snowfall.jquery.js"></script>
     <script>
         function handleGet() {
-            var aseKey = window.prompt("请输入密钥", "");
+            var aseKey = window.prompt("我们的恋爱纪念日是？", "");
             if (aseKey) {
                 letterInit(aseKey)
             }
@@ -73,7 +73,7 @@
                     });
                 }
             } catch (e) {
-                alert('密钥不正确，请重新输入')
+                alert('不对哟，请再好好想想哦！')
             }
         }
 
