@@ -40,26 +40,43 @@
 
 <body>
     <div id="main">
-        亲爱的宝贝：<br>
-初见你时，我感受到了一股清新脱俗的气息，只是惊鸿一瞥，胜却人间无数。<br>
-第二次见面是在电影院，我们进行了面对面的交流，对彼此有了一个初步了解。那晚，我们一起吃完火锅后，在广场上停留了很长时间，在寒风中，我第一次听到了一个女孩内心深处最真实的声音，让我产生了深深的共鸣。<br>
-第三次见面，我们约在了你朋友的婚礼，当婚礼进行曲响起的那一刻，坐在台下的我，望着站在台上的你，恍惚之间，我的内心多了一份期许和憧憬。当晚的道别，我们进行了一次深入而坦诚的交谈。虽然日后会分隔两地，但是我始终相信，只要我们坚定不移，最终一定能够走到一起。<br>
-接下来的每一天我们都保持着联系，浪漫的情人节那天，在那份特殊“奖励”的加持下，我们正式确立了恋爱关系。那晚我在屏幕这头翻来覆去，久久未能入眠。我深知这份感情的重要性，爱情的种子一旦种下，就意味着一份承诺。我下定决心，一定会好好地守护你。<br>
-每月一次的相聚，是我们之间的约定，也是我们感情的纽带。如今回想起来，幸福的场景依旧历历在目。记得确定关系后的第一次约会，我俩漫步在三月略带一丝凉意的八里湖畔，走了一圈又一圈，内心紧张又局促，牵起你手的那一刹那我紧张极了，这是我第一次离心爱的女生那么近，那一刻，我想将这份美好永远的延续下去。这一年我们一起走过了许多大大小小的城市，留下了我们恋爱的足迹。在庐山我们在山谷中踱步，惊叹大自然的鬼斧神工；在婺源篁岭我们在梯田间穿行，沉浸在灿烂的花海；在庐山西海我们置身于山水，在岛屿间畅快遨游；在景德镇我们一起走进艺术的殿堂，领略陶瓷文化的博大精深；在武汉我们登上黄鹤楼远眺武汉长江大桥，感受“一桥飞架南北，天堑变通途”的波澜壮阔。每一次的久别重逢都是最美好的相遇，时光很美，只因有你相伴。<br>
-从早春，到盛夏，再到深秋，时间来到了这个冬日。让我们保持初心，奔赴下一场山海。<br>
-      <div class="text-right">爱你的嘟嘟</div><div class="text-right">2023年冬 写于上海</div>
+        <div style="font-family: 'Courier New', Courier, monospace;line-height: 32px;text-align: center;margin-top: 100px;">你有一封书💌待查收，<button style="border-radius: 16px;height: 32px;padding: 0 20px;border: 0;background: #000;color: #fff;font-size: 14px;cursor: pointer;" onclick="handleGet()">点击领取</button></div>
     </div>
 
     <script type="text/javascript" class="autoinsert" src="js/jquery-1.2.6.min.js"></script>
+    <script src="js/cryptojs-3.1.9.min.js"></script>
     <script src="js/snowfall.jquery.js"></script>
     <script>
-        $(document).snowfall('clear');
-        $(document).snowfall({
-            image: "images/huaban.png",
-            flakeCount: 30,
-            minSize: 5,
-            maxSize: 22
-        });
+        function handleGet() {
+            var aseKey = window.prompt("请输入密钥", "");
+            if (aseKey) {
+                letterInit(aseKey)
+            }
+        }
+
+        function letterInit(aseKey) {
+            var encrypt = `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`
+
+            try {
+                var decrypt = CryptoJS.AES.decrypt(encrypt, CryptoJS.enc.Utf8.parse(aseKey), {
+                    mode: CryptoJS.mode.ECB,
+                    padding: CryptoJS.pad.Pkcs7
+                }).toString(CryptoJS.enc.Utf8);
+                if (decrypt) {
+                    document.getElementById('main').innerHTML = decrypt
+                    $(document).snowfall('clear');
+                    $(document).snowfall({
+                        image: "images/huaban.png",
+                        flakeCount: 30,
+                        minSize: 5,
+                        maxSize: 22
+                    });
+                }
+            } catch (e) {
+                alert('密钥不正确，请重新输入')
+            }
+        }
+
     </script>
 </body>
 
